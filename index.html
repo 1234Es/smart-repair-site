@@ -7,7 +7,7 @@
 
     <title>Smart Car Repair — Mobile Paint, Glass & Interior Restoration</title>
     <meta name="description"
-        content="Fast, reliable mobile car repair. Paint & polish restoration, windshield chip repair, leather & plastic restoration — by Güray. Same-day service available." />
+        content="Fast, reliable mobile car repair. Paint & polish restoration, windshield chip repair, leather & plastic restoration — by Güray. Same-day service available.">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Smart Car Repair — Mobile Paint, Glass & Interior Restoration">
@@ -19,38 +19,24 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon.png">
 
-    <!-- Fonts -->
+    <!-- Web fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@300;400;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@300;400;600;700&display=swap"
         rel="stylesheet">
 
+    <!-- App CSS & JS -->
     <link rel="stylesheet" href="./styles.css" />
     <script defer src="./script.js"></script>
-
-    <!-- LocalBusiness Schema (edit placeholders) -->
-    <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "AutomotiveBusiness",
-    "name": "Smart Car Repair",
-    "image": "https://example.com/assets/images/hero.jpg",
-    "url": "https://example.com",
-    "telephone": "+44 7000 000000",
-    "areaServed": "Your Service Area",
-    "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "09:00", "closes": "15:00" }
-    ],
-    "address": { "@type": "PostalAddress", "addressLocality": "Your City", "addressRegion": "", "postalCode": "", "addressCountry": "GB" },
-    "sameAs": []
-  }
-  </script>
 </head>
 
 <body>
+    <!-- Accessibility: allow keyboard users to skip the header -->
     <a class="skip-link" href="#main">Skip to content</a>
 
+    <!-- =========================
+       Header / Primary Nav
+     ========================= -->
     <header class="site-header" role="banner">
         <div class="container header-inner">
             <a href="#top" class="brand" aria-label="Smart Car Repair home">
@@ -78,18 +64,19 @@
     </header>
 
     <main id="main">
-        <!-- Hero -->
-        <section id="top" class="hero">
+        <!-- =========================
+         Hero
+       ========================= -->
+        <section id="top" class="hero section">
             <div class="hero-bg" role="img" aria-label="Polished car close-up"></div>
             <div class="container hero-inner">
                 <h1>Fast, Reliable Car Repairs — <span class="nowrap">Right at Your Door</span></h1>
                 <p>I’m <strong>Güray</strong>, your local mobile car repair specialist. From paint and polish to
                     windshield chips and interior fixes — I’ll get your car looking like new.</p>
                 <div class="cta-row">
-                    <a id="callBtn" class="btn" href="tel:+447000000000" data-phone="+447000000000">Call Me</a>
-                    <a id="waBtn" class="btn btn-outline" href="#" data-wa="+447000000000"
-                        data-area="Your Service Area">WhatsApp Me</a>
-                    <a class="btn btn-ghost" href="#contact">Free Quote</a>
+                    <a class="btn" href="#results">Repair Results</a>
+                    <a class="btn btn-outline" href="tel:+447000000000">Call Me</a>
+                    <a class="btn btn-ghost" href="#contact">Get a FREE Quote</a>
                 </div>
                 <ul class="trust-badges" aria-label="Highlights">
                     <li>Same-day available</li>
@@ -99,7 +86,9 @@
             </div>
         </section>
 
-        <!-- About -->
+        <!-- =========================
+         About
+       ========================= -->
         <section id="about" class="about section">
             <div class="container about-inner">
                 <img class="about-photo" src="./assets/images/guray.jpg" alt="Güray at work" loading="lazy" />
@@ -113,7 +102,9 @@
             </div>
         </section>
 
-        <!-- Services with split before/after sliders -->
+        <!-- =========================
+         Services (before/after)
+       ========================= -->
         <section id="services" class="services section">
             <div class="container">
                 <h2>Services</h2>
@@ -122,7 +113,6 @@
                     <h3>Car Polish &amp; Paint Restoration</h3>
                     <p>Remove light scratches, swirl marks, and oxidation. Premium polishes protect your paint and bring
                         back that deep, mirror-like shine.</p>
-
                     <div class="ba" data-label-before="Before" data-label-after="After">
                         <img class="ba-before" src="./assets/images/paint_before.jpeg" alt="Paint before polishing">
                         <img class="ba-after" src="./assets/images/paint_after.jpeg" alt="Paint after polishing">
@@ -135,7 +125,6 @@
                     <h3>Windshield Crack &amp; Chip Repair</h3>
                     <p>Stop chips becoming costly replacements. My resin injection restores strength and clarity to your
                         glass — fast.</p>
-
                     <div class="ba" data-label-before="Before" data-label-after="After">
                         <img class="ba-before" src="./assets/images/glass_before.jpeg" alt="Windshield before repair">
                         <img class="ba-after" src="./assets/images/glass_after.jpeg" alt="Windshield after repair">
@@ -145,10 +134,9 @@
                 </article>
 
                 <article class="service">
-                    <h3>Leather Restoration</h3>
+                    <h3>Leather &amp; Fabric Restoration</h3>
                     <p>Revive faded or cracked seats and trims. Color-match, repair, and protect without the cost of
                         reupholstery.</p>
-
                     <div class="ba" data-label-before="Before" data-label-after="After">
                         <img class="ba-before" src="./assets/images/leather_before.jpeg"
                             alt="Leather before restoration">
@@ -161,7 +149,6 @@
                 <article class="service">
                     <h3>Plastic Restoration</h3>
                     <p>Retexture and recolor scuffed or sun-faded plastics for a fresh, like-new interior.</p>
-
                     <div class="ba" data-label-before="Before" data-label-after="After">
                         <img class="ba-before" src="./assets/images/plastic_before.jpeg"
                             alt="Plastic before restoration">
@@ -173,135 +160,232 @@
             </div>
         </section>
 
-        <!-- Why choose me -->
+        <!-- =========================
+         Why Me
+       ========================= -->
         <section id="why" class="why section">
             <div class="container">
-                <h2>Why Choose Me</h2>
+                <h2 class="why-eyebrow">Why Choose Me</h2>
+                <h2 class="why-title">Results you can see. Service you can trust.</h2>
+
                 <ul class="why-grid">
-                    <li><span class="icon" aria-hidden="true">⚡</span> Fast, same-day service</li>
-                    <li><span class="icon" aria-hidden="true">🚗</span> Mobile — I come to you</li>
-                    <li><span class="icon" aria-hidden="true">💷</span> Honest, affordable pricing</li>
-                    <li><span class="icon" aria-hidden="true">🛠</span> Professional-grade tools</li>
-                    <li><span class="icon" aria-hidden="true">🤝</span> Deal directly with me</li>
+                    <li class="why-card">
+                        <div class="why-card-top"><span class="why-icon">⚡</span>
+                            <h3>Same-day repairs</h3>
+                        </div>
+                        <p>Most jobs finished in a single visit, right where you are.</p>
+                    </li>
+                    <li class="why-card">
+                        <div class="why-card-top"><span class="why-icon">🚐</span>
+                            <h3>Mobile workshop</h3>
+                        </div>
+                        <p>I bring pro-grade tools & materials to your driveway or office.</p>
+                    </li>
+                    <li class="why-card">
+                        <div class="why-card-top"><span class="why-icon">🎯</span>
+                            <h3>Smart, precise fixes</h3>
+                        </div>
+                        <p>Targeted repairs that blend in perfectly without full replacements.</p>
+                    </li>
+                    <li class="why-card">
+                        <div class="why-card-top"><span class="why-icon">💷</span>
+                            <h3>Clear, honest pricing</h3>
+                        </div>
+                        <p>Up-front quotes. No surprises. Pay only for what you need.</p>
+                    </li>
+                    <li class="why-card">
+                        <div class="why-card-top"><span class="why-icon">🧰</span>
+                            <h3>Professional materials</h3>
+                        </div>
+                        <p>Automotive-grade resins, coatings, and colour-matched finishes.</p>
+                    </li>
+                    <li class="why-card">
+                        <div class="why-card-top"><span class="why-icon">🤝</span>
+                            <h3>One person, end-to-end</h3>
+                        </div>
+                        <p>You deal with me—from quote to final polish. No middlemen.</p>
+                    </li>
                 </ul>
             </div>
         </section>
 
-        <!-- Results (after-only gallery grouped by category) -->
+        <!-- =========================
+         Results (auto gallery)
+       ========================= -->
         <section id="results" class="gallery section">
             <div class="container">
                 <h2>Results</h2>
 
+                <h3 class="gallery-cat">Leather &amp; Fabric</h3>
+                <div id="grid-lfrepair" class="grid" aria-live="polite"></div>
+
                 <h3 class="gallery-cat">Paint</h3>
-                <div class="grid">
-                    <figure>
-                        <img src="./assets/images/paint_after.jpg" alt="Paint restoration result" loading="lazy">
-                        <figcaption>Paint restoration</figcaption>
-                    </figure>
-                </div>
-
-                <h3 class="gallery-cat">Glass</h3>
-                <div class="grid">
-                    <figure>
-                        <img src="./assets/images/glass_after.jpg" alt="Windshield repair result" loading="lazy">
-                        <figcaption>Glass repair</figcaption>
-                    </figure>
-                </div>
-
-                <h3 class="gallery-cat">Leather</h3>
-                <div class="grid">
-                    <figure>
-                        <img src="./assets/images/leather_after.jpg" alt="Leather restoration result" loading="lazy">
-                        <figcaption>Leather restoration</figcaption>
-                    </figure>
-                </div>
+                <div id="grid-paintrepair" class="grid" aria-live="polite"></div>
 
                 <h3 class="gallery-cat">Plastic</h3>
-                <div class="grid">
-                    <figure>
-                        <img src="./assets/images/plastic_after.jpg" alt="Plastic restoration result" loading="lazy">
-                        <figcaption>Plastic restoration</figcaption>
-                    </figure>
-                </div>
+                <div id="grid-plasticrepair" class="grid" aria-live="polite"></div>
+
+                <h3 class="gallery-cat">Glass</h3>
+                <div id="grid-glassrepair" class="grid" aria-live="polite"></div>
             </div>
         </section>
 
-        <!-- How it works -->
+        <!-- =========================
+         How It Works (steps + FAQs)
+       ========================= -->
         <section id="how" class="how section">
             <div class="container">
                 <h2>How It Works</h2>
-                <ol class="steps">
-                    <li><strong>Contact me</strong> — Call, WhatsApp, or request a quote.</li>
-                    <li><strong>I come to you</strong> — Home, office, or anywhere convenient.</li>
-                    <li><strong>On-the-spot repair</strong> — Most jobs done in one visit.</li>
-                    <li><strong>Drive away happy</strong> — Enjoy your restored car.</li>
-                </ol>
+
+                <div class="how-grid">
+                    <!-- Steps -->
+                    <div class="how-steps">
+                        <ol class="steps">
+                            <li><strong>Contact me</strong> — Call, WhatsApp, or request a quick quote.
+                                <p class="step-note">Send a few photos of the issue and your location. I’ll confirm
+                                    price and availability right away.</p>
+                            </li>
+                            <li><strong>I come to you</strong> — Home, office, or wherever is convenient.
+                                <p class="step-note">I’m fully mobile and bring pro-grade tools, power, lighting, and
+                                    protection so there’s no mess.</p>
+                            </li>
+                            <li><strong>On-the-spot repair</strong> — Most jobs done in one visit.
+                                <p class="step-note">Smart repair techniques target the damaged area only: prep, match,
+                                    restore, protect — then tidy up.</p>
+                            </li>
+                            <li><strong>Drive away happy</strong> — Enjoy your restored car.
+                                <p class="step-note">We walk the result together, I share after-care tips, and you get a
+                                    receipt for your records.</p>
+                            </li>
+                        </ol>
+
+                        <div class="how-cta">
+                            <a class="btn" href="#results">See Repair Results</a>
+                            <a class="btn btn-outline" href="#contact">Get a FREE Quote</a>
+                        </div>
+                    </div>
+
+                    <!-- FAQs -->
+                    <div class="how-faqs">
+                        <h3 class="faq-title">FAQs</h3>
+                        <details class="faq">
+                            <summary>How long does a typical repair take?</summary>
+                            <div class="faq-body">Most smart repairs take <strong>60–120 minutes</strong> depending on
+                                the damage and curing time.</div>
+                        </details>
+                        <details class="faq">
+                            <summary>Do you need access to power or water?</summary>
+                            <div class="faq-body">I’m self-contained. I bring power, lighting, and protective sheeting.
+                                A driveway or safe parking spot is ideal.</div>
+                        </details>
+                        <details class="faq">
+                            <summary>Will the repair be noticeable?</summary>
+                            <div class="faq-body">I colour-match and blend into surrounding panels/materials. On normal
+                                viewing, the repair should be virtually invisible.</div>
+                        </details>
+                        <details class="faq">
+                            <summary>What areas do you cover?</summary>
+                            <div class="faq-body">I cover the local area shown below. If you’re nearby, message me — I
+                                can often travel a bit further.</div>
+                        </details>
+                        <details class="faq">
+                            <summary>How do I get a price?</summary>
+                            <div class="faq-body">Send clear photos (wide + close-up) and your postcode via WhatsApp.
+                                I’ll reply with an accurate fixed quote.</div>
+                        </details>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Contact / Booking -->
+        <!-- =========================
+         Contact / Booking (map + form)
+       ========================= -->
         <section id="contact" class="contact section">
-            <div class="container contact-inner">
-                <div>
-                    <h2>Book Your Repair</h2>
-                    <p><strong>Phone:</strong> <a id="phoneLink" href="tel:+447000000000">+44 7000 000000</a></p>
-                    <p><strong>Service area:</strong> <span id="areaLabel">Your Service Area</span></p>
-                    <p><strong>Hours:</strong> Mon–Fri 08:00–18:00, Sat 09:00–15:00</p>
+            <div class="container">
+                <!-- Title sits above both columns -->
+                <h2 class="contact-title">Book Your Repair</h2>
 
-                    <div class="contact-cta">
-                        <a class="btn" id="waBtn2" href="#">WhatsApp Me</a>
-                        <a class="btn btn-outline"
-                            href="mailto:hello@example.com?subject=Smart%20Car%20Repair%20Enquiry">Email Me</a>
+                <div class="contact-inner">
+                    <!-- Left: service area + map + quick actions -->
+                    <div class="contact-left">
+                        <p><strong>Phone:</strong> <a id="phoneLink" href="tel:+447000000000">+44 7000 000000</a></p>
+                        <p><strong>Service area:</strong> <span id="areaLabel">London & Nearby</span></p>
+
+                        <div id="serviceMap" aria-label="Service area map showing a radius around Lewisham"></div>
+                        <p class="map-legend small"><span class="dot"></span> Approximate coverage — radius can be
+                            adjusted for the client.</p>
+
+                        <div class="contact-cta">
+                            <a class="btn" id="waBtn2" href="#">WhatsApp Me</a>
+                            <a class="btn btn-outline" id="callBtn2" href="tel:+447000000000">Call Me</a>
+                        </div>
+
+                        <p class="small">Prefer a quick form? Fill this in and I’ll reply ASAP.</p>
                     </div>
-                    <p class="small">Prefer a quick form? Fill this in and I’ll reply ASAP.</p>
-                </div>
 
-                <form class="quote-form" id="quoteForm" aria-label="Request a free quote">
-                    <label>
-                        Name
-                        <input type="text" name="name" autocomplete="name" required>
-                    </label>
-                    <label>
-                        Phone
-                        <input type="tel" name="phone" autocomplete="tel" required>
-                    </label>
-                    <label>
-                        Service needed
-                        <select name="service">
-                            <option>Car Polish & Paint Restoration</option>
-                            <option>Windshield Crack & Chip Repair</option>
-                            <option>Leather Restoration</option>
-                            <option>Plastic Restoration</option>
-                        </select>
-                    </label>
-                    <label>
-                        Preferred date/time
-                        <input type="text" name="time" placeholder="e.g. Tue after 5pm">
-                    </label>
-                    <label>
-                        Message
-                        <textarea name="message" rows="4" placeholder="Car make/model, issue, location"></textarea>
-                    </label>
-                    <button type="submit" class="btn">Send via WhatsApp</button>
-                    <p class="form-note small">Submits to WhatsApp with your info pre-filled. No data is stored on this
-                        site.</p>
-                </form>
+                    <!-- Right: quote form -->
+                    <form class="quote-form" id="quoteForm" aria-label="Request a free quote">
+                        <label>Name<input type="text" name="name" autocomplete="name" required></label>
+                        <label>Phone<input type="tel" name="phone" autocomplete="tel" required></label>
+                        <label>Service needed
+                            <select name="service">
+                                <option>Car Polish & Paint Restoration</option>
+                                <option>Windshield Crack & Chip Repair</option>
+                                <option>Leather & Fabric Restoration</option>
+                                <option>Plastic Restoration</option>
+                            </select>
+                        </label>
+                        <label>Preferred date/time<input type="text" name="time"
+                                placeholder="e.g. Tue after 5pm"></label>
+                        <label>Message<textarea name="message" rows="4"
+                                placeholder="Car make/model, issue, location"></textarea></label>
+                        <button type="submit" class="btn">Send via WhatsApp</button>
+                        <p class="form-note small">Submits to WhatsApp with your info pre-filled. No data is stored on
+                            this site.</p>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
 
-    <!-- Sticky mobile call/whatsapp bar -->
+    <!-- =========================
+       Sticky mobile quick actions
+       (sizes + “back to top” handled in CSS/JS)
+     ========================= -->
     <div class="sticky-bar" role="navigation" aria-label="Quick actions">
-        <a class="sticky-btn" id="stickyCall" href="tel:+447000000000" aria-label="Call Güray">Call</a>
         <a class="sticky-btn" id="stickyWA" href="#" aria-label="Message on WhatsApp">WhatsApp</a>
+        <a class="sticky-btn secondary" id="stickyCall" href="tel:+447000000000" aria-label="Call Güray">Call</a>
+        <button class="sticky-top" id="stickyTop" aria-label="Back to top">↑</button>
     </div>
 
+    <!-- =========================
+       Lightbox (with counter + thumbnails)
+       Thumbs + counter are populated in script.js
+     ========================= -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+        <button class="lb-close" aria-label="Close">&times;</button>
+        <div class="lb-counter" aria-live="polite">1 / 1</div>
+        <button class="lb-prev" aria-label="Previous image">&#10094;</button>
+        <img class="lb-img" alt="">
+        <button class="lb-next" aria-label="Next image">&#10095;</button>
+        <div class="lb-thumbs" id="lbThumbs" aria-label="Thumbnails"></div>
+    </div>
+
+    <!-- =========================
+       Footer
+     ========================= -->
     <footer class="site-footer">
         <div class="container">
             <p>&copy; <span id="year"></span> Smart Car Repair. All rights reserved.</p>
             <p class="small">Site by <a href="#" rel="noopener">You</a>.</p>
         </div>
     </footer>
+
+    <!-- Google Maps (your API key) -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvmIo2G19jnMCxcMeVAvPMkxvgtNr-9FQ&callback=initServiceMap"
+        async defer></script>
 </body>
 
 </html>
